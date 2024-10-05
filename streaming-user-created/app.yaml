@@ -1,0 +1,14 @@
+name: streaming-user-created
+language: Python
+variables:
+  - name: input
+    inputType: InputTopic
+    defaultValue: user_created
+    required: false
+  - name: output
+    inputType: OutputTopic
+    defaultValue: transform
+    required: false
+dockerfile: dockerfile
+runEntryPoint: main.py
+defaultFile: main.py
